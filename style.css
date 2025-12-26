@@ -1,37 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
-  background: #f2f2f2;
-  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #2b2b2b;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
-  width: 120px;
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
 }
 
-header {
+.logo img {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.admin-btn {
   background: #2e7d32;
   color: white;
-  padding: 15px;
+  padding: 8px 14px;
+  border-radius: 6px;
 }
 
-.galeria img {
-  margin: 5px;
-  border-radius: 10px;
+.hero {
+  height: 80vh;
+  background: url("https://picsum.photos/1600/900?nature") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.55);
+  padding: 40px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+}
+
+.green {
+  background: #2e7d32;
+  color: white;
+}
+
+.white {
+  background: white;
+  color: #2e7d32;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.light {
+  background: #f3f9f3;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .calendar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7,1fr);
+  gap: 10px;
   max-width: 700px;
-  margin: auto;
-  gap: 5px;
+  margin: 40px auto;
 }
 
 .day {
-  padding: 10px;
   background: white;
-  border-radius: 5px;
+  padding: 18px;
+  border-radius: 8px;
 }
 
 .alugada {
@@ -39,20 +123,36 @@ header {
   color: white;
 }
 
-.botoes a {
+.legend span {
+  width: 15px;
+  height: 15px;
   display: inline-block;
-  margin: 10px;
-  padding: 12px 18px;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
+  margin: 0 5px;
 }
 
-.whats { background: #25d366; }
-.insta { background: #c13584; }
-.admin { background: #555; }
+.free {
+  border: 1px solid #999;
+}
 
-input, button {
-  padding: 10px;
-  margin: 5px;
+.busy {
+  background: #e53935;
+}
+
+.contact-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 28px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp { background: #25d366; }
+.instagram { background: #c13584; }
+
+footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
