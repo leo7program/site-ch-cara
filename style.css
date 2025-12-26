@@ -46,7 +46,7 @@ nav a {
 
 .hero {
   height: 80vh;
-  background:("img1.png") center/cover;
+  background: url("img1.png") center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
